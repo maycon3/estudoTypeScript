@@ -21,4 +21,9 @@ class Negociacao {
     get valume(){
         return this._quantidade * this._valor;
     }
+
+    get dataFormatada():string {
+
+        return `${this._data.getDate()}/${this._data.getMonth() + 1}/${this._data.getFullYear()}`;
+    }
 }
